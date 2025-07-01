@@ -1,0 +1,23 @@
+[project]
+name = "protopo"
+version = "0.1.0"
+description = "A Python package for drawing protein topology diagrams."
+authors = [
+    {name = "Huanan Herman Zhao",email = "hermanzhaozzzz@gmail.com"}
+]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "protopo", from = "src" }]
+requires-python = ">=3.10"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+matplotlib = ">=3.10.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
