@@ -3,8 +3,8 @@ from protopo import ProTopo
 
 def draw_egfp(figsize=(8, 6)):
     pt = ProTopo(figsize=figsize)
-    pt.add_n_term()  # start from M1, V2.....
-    pt.add_linker(1, 3, to="←", scale=0.5)
+    pt.add_n_term()  # a N term text marker
+    pt.add_linker(1, 3, to="←", scale=0.5)  # [1, 3) -> 1, 2
     pt.add_alpha(3, 9, label="H1", to="←", scale=0.5)
     pt.add_linker(9, 12, to="←↑", steps=(0.1, 0.9))
     pt.add_beta(12, 23, label="S1", to="↑")

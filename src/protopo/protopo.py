@@ -102,7 +102,7 @@ class ProTopo:
                 "x": self.x + dx * (i - start),
                 "y": self.y + dy * (i - start),
                 "to": to,
-                "type": structure_type,
+                "type": structure_type if i != 1 else "N_term",
             }
 
     def _move(self, direction, length):
@@ -270,16 +270,18 @@ class ProTopo:
             >>> pt.add_n_term()
             Adds the label "N" at the current position.
         """
+        assert self.x == 0
+        assert self.y == 0
         self.ax.text(
-            self.x,
-            self.y,
+            0,
+            0,
             "N",
             ha="center",
             va="center",
             fontsize=12,
             fontweight="bold",
         )
-        self._record_index_map(self.x, self.y, 0, 0, "→", "Nterm")
+        self._record_index_map(1, 2, 0, 0, "", "N_term")
 
     def add_c_term(self):
         """Adds a C-terminal label to the current position in the plot.
@@ -296,7 +298,8 @@ class ProTopo:
             fontsize=12,
             fontweight="bold",
         )
-        self._record_index_map(self.x, self.y, 0, 0, "→", "Cterm")
+        idx = max(self.index_map.keys()) + 1
+        self._record_index_map(idx, idx + 1, 0, 0, "", "C_term")
 
     def add_linker(self, start, end, to="→", steps=(), color="black", scale=1.0):
         """Adds a linker structure to the plot.
