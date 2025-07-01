@@ -299,7 +299,9 @@ class ProTopo:
             fontweight="bold",
         )
         idx = max(self.index_map.keys()) + 1
-        self._record_index_map(idx, idx + 1, 0, 0, "", "C_term")
+        self._record_index_map(
+            idx, idx + 1, 0, 0, self.index_map[idx - 1]["to"], "C_term"
+        )
 
     def add_linker(self, start, end, to="→", steps=(), color="black", scale=1.0):
         """Adds a linker structure to the plot.
