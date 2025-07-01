@@ -463,6 +463,14 @@ class ProTopo:
         plt.tight_layout()
         plt.show()
 
+    def close(self):
+        """Closes the current figure and releases memory.
+
+        Example:
+            >>> pt.close()  # releases figure from memory
+        """
+        plt.close(self.fig)
+
     def save(self, path="protopo_plot.pdf", **kwargs):
         """
         Save the current topology plot to a file.

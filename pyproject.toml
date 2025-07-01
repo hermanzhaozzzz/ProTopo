@@ -1,6 +1,6 @@
 [project]
 name = "protopo"
-version = "0.1.4"
+version = "0.1.5"
 description = "A Python package for drawing protein topology diagrams."
 authors = [{ name = "Huanan Herman Zhao", email = "hermanzhaozzzz@gmail.com" }]
 license = "MIT"
