@@ -1,8 +1,8 @@
 from protopo import ProTopo
 
 
-def draw_egfp():
-    pt = ProTopo()
+def draw_egfp(figsize=(8, 6)):
+    pt = ProTopo(figsize=figsize)
     pt.add_n_term()
     pt.add_linker(1, 3, to="←", scale=0.5)
     pt.add_alpha(3, 9, label="H1", to="←", scale=0.5)
