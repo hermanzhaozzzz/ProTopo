@@ -1,11 +1,14 @@
 [project]
 name = "protopo"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python package for drawing protein topology diagrams."
 authors = [{ name = "Huanan Herman Zhao", email = "hermanzhaozzzz@gmail.com" }]
 license = "MIT"
 readme = "README.md"
 packages = [{ include = "protopo", from = "src" }]
+repository = "https://github.com/hermanzhaozzzz/protopo"
+homepage = "https://github.com/hermanzhaozzzz/protopo"
+keywords = ["protopo", "python", "protein", "bioinformatics"]
 requires-python = ">=3.10"
 
 
@@ -17,4 +20,17 @@ build-backend = "poetry.core.masonry.api"
 matplotlib = ">=3.8.1"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.4.1"
+toml = ">=0.10.2"
+ruff = ">=0.7.1"  # 替换 black、isort、flake8、mypy 等功能
+
+
+[tool.ruff]
+line-length = 88
+extend-include = ["*.ipynb"]
+lint.extend-ignore = ["E501"]  # 忽略行长限制，让 `black` 风格兼容
+lint.select = ["E", "F", "I", "N", "B", "A"]  # 启用特定规则组
+lint.fixable = ["ALL"]  # 启用 Ruff 的全部可自动修复规则
+
+[tool.poetry.group.test.dependencies]
+pytest = ">=7.1.3"
+pytest-cov = ">=3.0"
