@@ -3,7 +3,7 @@ from protopo import ProTopo
 
 def draw_egfp(figsize=(8, 6)):
     pt = ProTopo(figsize=figsize)
-    pt.add_n_term()
+    pt.add_n_term()  # start from M1, V2.....
     pt.add_linker(1, 3, to="←", scale=0.5)
     pt.add_alpha(3, 9, label="H1", to="←", scale=0.5)
     pt.add_linker(9, 12, to="←↑", steps=(0.1, 0.9))
@@ -36,8 +36,8 @@ def draw_egfp(figsize=(8, 6)):
     pt.add_beta(199, 208, label="S10", to="↑", scale=1.2)
     pt.add_linker(208, 216, to="↑←↓", steps=(0.2, 0.6, 0.2), scale=0.5)
     pt.add_beta(216, 227, label="S11", to="↓", scale=0.7)
-    pt.add_linker(227, 238, to="↓", scale=0.3)
-    pt.add_c_term()
+    pt.add_linker(227, 239, to="↓", scale=0.3)
+    pt.add_c_term()  # end with K239
     return pt
 
 
