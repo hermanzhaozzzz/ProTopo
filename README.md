@@ -39,6 +39,8 @@ pt.add_beta(13, 22, label="S1", to="→")
 pt.add_triangles([15])
 pt.add_c_term()
 pt.show()
+# pt.save("demo.pdf")  # save fig
+# pt.close()  # release memory
 ```
 
 ![Qukck Example](resources/plot_demo_quickstart.png)
@@ -52,7 +54,8 @@ from protopo.demo import draw_egfp
 egfp = draw_egfp()
 egfp.add_triangles(idx=[6, 211])
 egfp.show()
-# egfp.save("egfp.pdf")
+# egfp.save("egfp.svg")
+# egfp.close()  # release memory
 ```
 
 then you will see
