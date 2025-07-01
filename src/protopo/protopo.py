@@ -279,6 +279,7 @@ class ProTopo:
             fontsize=12,
             fontweight="bold",
         )
+        self._record_index_map(self.x, self.y, 0, 0, "→", "Nterm")
 
     def add_c_term(self):
         """Adds a C-terminal label to the current position in the plot.
@@ -295,6 +296,7 @@ class ProTopo:
             fontsize=12,
             fontweight="bold",
         )
+        self._record_index_map(self.x, self.y, 0, 0, "→", "Cterm")
 
     def add_linker(self, start, end, to="→", steps=(), color="black", scale=1.0):
         """Adds a linker structure to the plot.
