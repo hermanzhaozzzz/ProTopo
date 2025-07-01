@@ -25,6 +25,7 @@ poetry install
 ```
 
 ## 🚀 Quick Example
+
 ```python
 from protopo import ProTopo
 
@@ -37,7 +38,11 @@ pt.add_triangles([15])
 pt.add_c_term()
 pt.show()
 ```
+
+![Qukck Example](resources/plot_demo_quickstart.png)
+
 ## 🧪 Run EGFP Example
+
 This renders the schematic topology diagram of Enhanced GFP, following literature-reported secondary structure layout.
 
 ```python
@@ -47,22 +52,28 @@ egfp.add_triangles(idx=[6, 211])
 egfp.show()
 # egfp.save("egfp.pdf")
 ```
+
 then you will see
 
 ![EGFP demo](resources/plot_demo_egfp.png)
 
 ## 🧪 Testing
+
 ```bash
 poetry run pytest
 ```
 
 ## 🧬 API Reference
+
 TODO
 
 | API | Description | Link|
 
 ## License
+
 MIT License © Huanan Herman Zhao
 
 ## Contribution
+
 Welcome to contribute codes and ideas
+
