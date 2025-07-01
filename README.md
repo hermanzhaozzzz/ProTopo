@@ -4,6 +4,8 @@
 
 It helps visualize and annotate simplified protein secondary structure layouts for publications, teaching, or design explanation.
 
+[GitHub repo](https://github.com/hermanzhaozzzz/ProTopo) | [Issue page](https://github.com/hermanzhaozzzz/ProTopo/issues) | [Autohr](https://github.com/hermanzhaozzzz)
+
 ---
 
 ## ✨ Features
@@ -76,4 +78,3 @@ MIT License © Huanan Herman Zhao
 ## Contribution
 
 Welcome to contribute codes and ideas
-
