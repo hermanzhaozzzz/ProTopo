@@ -4,7 +4,7 @@
 
 It helps visualize and annotate simplified protein secondary structure layouts for publications, teaching, or design explanation.
 
-[GitHub repo](https://github.com/hermanzhaozzzz/ProTopo) | [Issue page](https://github.com/hermanzhaozzzz/ProTopo/issues) | [Autohr](https://github.com/hermanzhaozzzz)
+[GitHub repo](https://github.com/hermanzhaozzzz/ProTopo) | [Issue page](https://github.com/hermanzhaozzzz/ProTopo/issues) | [Author](https://github.com/hermanzhaozzzz)
 
 ---
 
@@ -65,15 +65,9 @@ then you will see
 poetry run pytest
 ```
 
-## 🧬 API Reference
-
-TODO
-
-| API | Description | Link|
-
 ## License
 
-MIT License © Huanan Herman Zhao
+MIT License © [Huanan Herman Zhao](https://github.com/hermanzhaozzzz)
 
 ## Contribution
 
